@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Kalam&family=Patua+One&family=Russo+One&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+i{
+    cursor: pointer;
+    color:yellow;
+    font-weight: bolder;
+    font-size:1.5rem;
+    
+}
+body{
+    margin:0 50px;
+    background-color:rgba(0, 255, 221, 0.884);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Patua One;
+}
+.form-data{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* border: 2px solid red; */
+    padding:20px;
+    height: fit-content;
+    font-family: Patua One;
+}
+
+.form-data input{
+    margin:10px 0px;
+    width:100%;
+    padding:10px;   
+    font-family: Patua One;
+    box-sizing: border-box;
+    border: 2px solid red;
+    font-size: 18px;
+}
+.form-data textarea{
+    margin:10px 0px;
+    width:100%;
+    padding:10px;   
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 2px solid red;
+}
+.form-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.form-class{
+    padding:10px;
+    border: 3px solid black;
+    border-radius:5px;
+    font-size:1.5rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow-x:hidden;
+    background-color: white;
+}
+.active{
+    display: block;
+    z-index: 3;
+    position: relative;
+    width:fit-content ;
+    transition-delay: 120s;
+}
+@media (max-width:600px) {
+    .active{
+        width: 100%;
+    }
+}
+.btns{
+    display: flex;
+    justify-content: end;
+    padding-top:10px;
+    gap:20px;
+}
+.fa-x{
+    padding-top:10px;
+}
+.btns button{
+    color:white;
+    font-size:18px;
+    width:fit-content;
+    padding:10px;
+    cursor: pointer;
+    font-family:Russo One ;
+}
+button[type="submit"]{
+    background-color: blue;
+    border:2px solid black;
+    border-radius: 5px;
+
+}
+button[type="reset"]{
+    color:white;
+    background-color: black;
+}
+
+.app{
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+    border:5px solid black;
+    border-radius: 8px;
+    padding:15px;
+    text-align: center;
+    scrollbar-color: black;
+    overflow: auto;
+-webkit-box-shadow: 0px 7px 25px 19px rgba(146, 227, 12, 1);
+    -moz-box-shadow: 0px 7px 25px 19px rgba(146, 227, 12, 1);
+    box-shadow: 0px 7px 25px 19px rgba(146, 227, 12, 1);
+}
+.app h2{
+    font-size: 24px;
+}
+
+#addNew{
+    color:white;
+    background-color: blue;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#addNew i{
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+#msg{
+    color:red;
+    font-size:16px;
+}
+
+#tasks div{
+    border:2px solid black;
+    width:100%;
+    text-align: left;
+    margin-bottom:10px;
+    padding:10px;
+    box-sizing: border-box;
+    overflow:auto;
+}
+#tasks div>span{
+    margin-bottom:20px;
+}
+.app::-webkit-scrollbar{
+    background-color: yellow;
+}
+.app::-webkit-scrollbar-thumb{
+    background-color: rgb(230, 18, 18);
+}
+
+.task-data{
+    font-size:20px;
+    font-family: Russo One;
+    font-weight: 900;
+}
+.task-date{
+    display: flex;
+    justify-content: flex-end;
+    font-family: Chakra Petch;
+    font-weight: bold;
+    color:red;
+}
+.task-desc{
+    font-family: kalam;
+    padding-bottom:10px;
+}
+.form-class{
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-40%);
+    width:auto;
+    height: max-content;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+@media (max-width:600px) {
+    .form-class{
+        width: 80%;
+        margin: auto;
+    }
+}

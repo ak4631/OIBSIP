@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDo</title>
+
+</head>
+
+<body>
+    <div class="form-class">
+        <div class="form-heading">
+            <h2>Add New Task</h2>
+            <i class="fa-solid fa-x del" style="color: #eb0000;"></i>
+        </div>
+        <form id="form" class="form-data">
+            <label for="input-text">Task Title</label>
+            <input id="input-text" type="text">
+            <div id="msg"></div>
+            <label for="DD-Date">Due Date</label>
+            <input id="DD-Date" type="date">
+            <label for="Desc-data">Description</label>
+            <textarea id="Desc-data" rows="10" cols="30"></textarea>
+            <div class="btns">
+                <button id="add" type="submit">Add</button>
+                <button id="close" type="reset">Close</button>
+            </div>
+        </form>
+    </div>
+    <div class="app">
+        <h2>ToDo APP</h2>
+        <div id="addNew">
+            <span>Add New Task</span>
+            <i class="plus">+</i>
+        </div>
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
